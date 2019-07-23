@@ -1,6 +1,7 @@
 body{
     background:url('../pexels-photo-736230.jpeg');
 }
-h1{
-
+.div1{
+    border: 3px solid black;
+    border-top: 300px;
 }
