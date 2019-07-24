@@ -1,7 +1,10 @@
-body{
-    background:url('../pexels-photo-736230.jpeg');
-}
+
 .div1{
     border: 3px solid black;
     border-top: 300px;
+}
+.body1{
+    border: 1px solid black;
+    border-width: 90px;
+    border-bottom: 90px
 }
