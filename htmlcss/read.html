@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    function getname()
+    {
+        var n=document.getElementById("name").value;
+        console.log(n);
+        alert(n);
+        document.getElementById("result").innerHTML=n;
+    }
+    </script>
+</head>
+<body>
+    <div style="border-block-start-width: 30px">
+        <form>
+        <table>
+            <tr>
+                <td>Enter Your Name :</td>
+                <td><input type="text" id="name"/></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="button"  onclick="getname();">Submit</button></td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="result"></p>
+                </td>
+            </tr>
+        </table>
+        </form>
+</div>
+    
+</body>
+</html>
