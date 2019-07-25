@@ -5,66 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script>
-    function operation()
-    {
-       
-       
-        var n1=Number(document.getElementById("n1").value);
-        var n2=Number(document.getElementById("n2").value);
-        var op=document.getElementById("op").value
-        var r;
-       
-        if(op=="Add")
-        {
-           r=addn(n1,n2);
-        }
-        else if(op=="Sub")
-        {
-            
-            r=Subn(n1,n2);
-        }
-        else if(op=="Mul")
-        {
-            r=Muln(n1,n2);
-        }
-        else
-        {
-            r=Divn(n1,n2);
-        }
-        document.getElementById("p").innerHTML=r;
-    }
-    function addn(a,b)
-    {
-        var c=a+b;
-        return c;
-    }
-    function Subn(a,b)
-    {
-        var r=a-b;
-        return r;
-    }
-    function Muln(a,b)
-    {
-        var r=a*b;
-        return r;
-    }
-    function Divn(a,b)
-    {
-        var r=a/b;
-        return r;
-    }
-    
-    </script>
+    <script src="./js/myscript.js"></script>
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col col-8 col-sm-6 col-md-6 col-lg-4 col-xl-2">
                     <table class="table">
                             <tr>
                                 <td>Name :</td>
-                                <td><input type="text" required/></td>
+                                <td><input type="text" id="name" required/></td>
                     
                             </tr>
                             <tr>
@@ -79,24 +29,24 @@
                             </tr>
                             <tr>
                                 <td>Date Of Birth</td>
-                                <td><input type="date"/></td>
+                                <td><input type="date" id="date1"/></td>
                             </tr>
                             <tr>
                                 <td>Age :</td>
-                                <td><input type="number" min="18" max="30" pattern="[18-30]{1-2}"/></td>
+                                <td><input type="number" id="age" min="18" max="30" pattern="[18-30]{1-2}"/></td>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Gender :</td>
-                                <td><input type="radio" name="g"/>Male<input type="radio" name="g"/>Female</td>
+                                <td><input type="radio" value="m" name="g"/>Male<input type="radio" name="g" value="f"/>Female</td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox"/></td>
+                                <td><input type="checkbox" value="c"/></td>
                                 <td>I Agree Terms And Conditions</td>
                             </tr>
                             <tr>
                                 <td></td>
-                                <td><button>Submit</button></td>
+                                <td><button type="button" class="btn btn-info" onclick="studreg();">Submit</button></td>
                             </tr>
                         </table>
     </div>
