@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#show").click(function(){
+            $("p").show();
+            $("p").css("background-color","yellow");
+        })
+        $(".hide").click(function(){
+            $("p").hide();
+            $("p").css("background-color","red");
+        })          
+        })
+        
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><button type="button" id="show">Shoew Me</button></td>
+            <td><button type="button" class="hide">Hide Me</button></td>
+        </tr>
+        <tr>
+            <td><p>Full Stack Class</p></td>
+        </tr>
+    </table>
+</body>
+</html>

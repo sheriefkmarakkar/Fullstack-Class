@@ -21,7 +21,19 @@
     <meta name="viewport" content="width=>, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
+        $(document).ready(function(){
+            $('#login1').click(function(){
+                $(".class2").show();
+                $(".class1").hide();     
+
+            })
+            $("#reg").click(function(){
+                $(".class1").show();
+                $(".class2").hide();
+            })
+        })
         function getn()
         {
            
@@ -62,6 +74,11 @@
               </nav>>
     <div class="container">
         <div class="row">
+            <div>
+                <button type="button" id="login1">Login</button>
+                <button type="button" id="reg">Register</button>
+
+            </div>
             <div class="col col-12 col-sm-6 col-md-4">
     <table class="class2">
         <tr>
@@ -78,7 +95,7 @@
         </tr>
     </table>
     <div class="col col-12 col-sm-6 col-md-4">
-    <table class="class1">
+    <table class="class1"style="">
     <tr>
         <td>Name :</td>
         <td><input type="text" id="name"/></td>
